@@ -1,0 +1,79 @@
+/*
+ * Project Detail page (project-watnaku.html) — สไตล์เฉพาะหน้านี้เท่านั้น
+ * หมายเหตุ: ส่วนใหญ่ reuse จาก style.css เดิม (.btn, .skill-card, .timeline,
+ * .tag-row, .section-head, .fact-list ฯลฯ) — ไฟล์นี้มีแค่ของใหม่ที่จำเป็น
+ */
+
+/* ---- Hero ---- */
+.pd-hero{ padding:150px 0 70px; }
+.pd-title{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(2rem, 4.5vw, 3.2rem);
+  line-height:1.25; margin-bottom:18px; max-width:26ch;
+}
+.pd-hero-desc{ color:var(--text-dim); max-width:62ch; margin-bottom:26px; }
+.pd-badges{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:34px; }
+.pd-badge{
+  font-size:0.85rem; font-weight:500;
+  padding:7px 14px; border-radius:20px; border:1px solid;
+}
+.pd-badge-done{ color:var(--accent-bright); border-color:var(--accent); background:var(--accent-deep); }
+.pd-badge-wip{ color:#E0A96D; border-color:#4A3A22; background:#2A2013; }
+.pd-hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+
+/* ---- Overview ---- */
+#pd-overview{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.pd-overview{ max-width:72ch; }
+.pd-overview p{ color:var(--text-dim); margin-bottom:16px; font-size:1rem; }
+.pd-overview p:last-child{ margin-bottom:0; }
+
+/* ---- What I Built / Backend Features ---- */
+#pd-built{ background:var(--bg); }
+#pd-features{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+.pd-methods{ display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+
+/* ---- Scope ---- */
+#pd-scope-section{ background:var(--bg); }
+.pd-legend{
+  display:flex; gap:24px; flex-wrap:wrap;
+  color:var(--text-faint); font-size:0.85rem; margin-bottom:26px;
+}
+.pd-legend span{ display:inline-flex; align-items:center; gap:8px; }
+.pd-legend span::before{ content:''; width:8px; height:8px; border-radius:50%; display:inline-block; }
+.pd-legend .lg-done::before{ background:var(--accent-bright); }
+.pd-legend .lg-planned::before{ background:var(--text-faint); }
+
+.pd-scope{ border-top:1px solid var(--border); }
+.pd-scope-row{
+  display:flex; justify-content:space-between; align-items:flex-start; gap:24px;
+  padding:20px 0; border-bottom:1px solid var(--border);
+}
+.pd-scope-row h3{ font-family:var(--serif); font-size:1.08rem; font-weight:600; }
+.pd-scope-row p{ color:var(--text-faint); font-size:0.85rem; margin-top:6px; max-width:64ch; line-height:1.6; }
+.pd-scope-status{
+  flex-shrink:0; font-size:0.8rem; font-weight:500;
+  padding:5px 12px; border-radius:20px; border:1px solid; white-space:nowrap; margin-top:2px;
+}
+.pd-status-done{ color:var(--accent-bright); border-color:var(--accent); background:var(--accent-deep); }
+.pd-status-planned{ color:var(--text-dim); border-color:var(--border); background:var(--bg-alt); }
+.pd-note{ color:var(--text-faint); font-size:0.86rem; margin-top:18px; }
+
+/* ---- Tech Stack ---- */
+#pd-stack{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
+#pd-stack .tag-row{ gap:10px; }
+
+/* ---- GitHub CTA ---- */
+.pd-cta{
+  text-align:center; padding:80px 0;
+  background:var(--bg-alt); border-top:1px solid var(--border);
+}
+.pd-cta h2{ margin-bottom:14px; }
+.pd-cta p{ color:var(--text-dim); max-width:56ch; margin:0 auto 30px; }
+.pd-cta .pd-hero-actions{ justify-content:center; }
+
+/* ---- Responsive ---- */
+@media (max-width: 860px){
+  .pd-hero{ padding:120px 0 50px; }
+  .pd-scope-row{ flex-direction:column; gap:12px; align-items:flex-start; }
+  .pd-cta{ padding:60px 0; }
+}

@@ -78,7 +78,7 @@ const translations = {
     projectTag: "REST API สำหรับระบบจัดการข้อมูลวัด",
     projectTitle: "เว็บไซต์วัดนาคูโมทนามัยปุญญาราม",
     projectDesc: "พัฒนา Backend REST API สำหรับเว็บไซต์วัดนาคูโมทนามัยปุญญาราม ด้วย Node.js, Express.js และ MySQL รองรับการจัดการข้อมูลวัด พระสงฆ์ กิจกรรม ข่าวประชาสัมพันธ์ และภาพกิจกรรม พร้อมระบบยืนยันตัวตนผู้ดูแลด้วย JWT และ bcrypt รวมถึงระบบอัปโหลดรูปภาพด้วย Multer ปัจจุบันอยู่ระหว่างพัฒนา Frontend และส่วนอื่นของระบบตามขอบเขตโครงงาน",
-    projectLink: "ดูโค้ดบน GitHub",
+    projectLink: "ดูรายละเอียดโปรเจกต์",
     
     // Contact Section
     contactTitle: "Contact Me",
@@ -161,7 +161,7 @@ const translations = {
     projectTag: "Temple Management REST API",
     projectTitle: "Wat Na Ku Moth Nammai Punya Ram Website",
     projectDesc: "Developed a Backend REST API for the Wat Naku temple website using Node.js, Express.js, and MySQL, supporting management of temple information, monks, activities, news, and activity photos — with admin authentication via JWT and bcrypt, plus image uploads via Multer. The frontend and other parts of the system are currently under development according to the project scope.",
-    projectLink: "View Code on GitHub",
+    projectLink: "View Project Details",
     
     // Contact Section
     contactTitle: "Contact Me",

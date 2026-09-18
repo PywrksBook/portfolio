@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wat Naku Temple Website — Project | Piyawat Reangraksa</title>
+<meta name="description" content="Project detail: Backend REST API for the Wat Naku Moth Nammai Punya Ram temple website — Node.js, Express.js, MySQL, JWT, bcrypt, Multer. Frontend in progress.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="project-watnaku.css">
+</head>
+<body>
+
+<header id="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo"><span class="logo-mark"></span>Portfolio</a>
+    <div class="nav-links">
+      <a href="index.html#about">About Me</a>
+      <a href="index.html#work">Experience</a>
+      <a href="index.html#skills">Skills</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <a href="index.html" class="nav-cta pd-home-btn">&larr; Home</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="pd-hero">
+    <div class="wrap">
+      <div class="kicker">Project</div>
+      <h1 class="pd-title">Wat Naku Moth Nammai Punya Ram Website</h1>
+      <p class="pd-hero-desc">A website for Wat Naku Moth Nammai Punya Ram temple — gathering temple information and publishing news and activities in one central place, with an admin management system behind it.</p>
+      <div class="pd-badges">
+        <span class="pd-badge pd-badge-done">Backend API — Completed</span>
+        <span class="pd-badge pd-badge-wip">Frontend — In Progress</span>
+      </div>
+      <div class="hero-actions pd-hero-actions">
+        <a href="https://github.com/PywrksBook/website-watnaku-backend-v1" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
+        <a href="index.html" class="btn btn-ghost">&larr; Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <section id="pd-overview">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Background</div>
+        <h2>Project Overview</h2>
+      </div>
+      <div class="pd-overview">
+        <p>The temple currently has no website of its own. Information about the temple, announcements, and activities is available only on-site — visitors and interested people have no easy way to find it.</p>
+        <p>The goal of this project is to collect the temple's information and publish news and activities in a single central place: a public-facing website for visitors, plus an admin management system for the temple's staff to maintain the content.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT I BUILT -->
+  <section id="pd-built">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">My Work</div>
+        <h2>What I Built</h2>
+        <p class="section-sub">Everything below was built by me, hands-on, and tested with Postman.</p>
+      </div>
+      <div class="skill-groups">
+        <div class="skill-card cat-backend">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+            <div><h3>REST API</h3><p>Designed and built RESTful endpoints for every data module of the website.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-backend">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 014-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 01-4 4H3"/></svg></div>
+            <div><h3>CRUD Operations</h3><p>Create, read, update, and delete for temple, monks, activities, news, and gallery data.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-database">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <div><h3>MySQL Database</h3><p>Designed the schema and used parameterized queries to prevent SQL injection.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-backend">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+            <div><h3>JWT Authentication</h3><p>Admin login issues a JSON Web Token — protected routes verify the Bearer token.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-backend">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <div><h3>Password Hashing</h3><p>Admin passwords are hashed with bcrypt before being stored in the database.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-cloud">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg></div>
+            <div><h3>Image Upload</h3><p>Configured Multer: image files only, 5 MB limit, automatic filename renaming.</p></div>
+          </div>
+        </div>
+        <div class="skill-card cat-tools">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <div><h3>API Testing</h3><p>Tested every endpoint with Postman, including login-protected routes.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BACKEND FEATURES -->
+  <section id="pd-features">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Delivered API</div>
+        <h2>Backend Features</h2>
+        <p class="section-sub">API modules that are completed and tested with Postman.</p>
+      </div>
+      <div class="fact-list">
+        <div class="fact-row"><span>Temple Information</span><span>Public read &middot; Admin update</span></div>
+        <div class="fact-row"><span>Monks</span><span>Full CRUD &mdash; public read / admin write</span></div>
+        <div class="fact-row"><span>Activities</span><span>Full CRUD &mdash; public read / admin write</span></div>
+        <div class="fact-row"><span>News</span><span>Full CRUD &mdash; public read / admin write</span></div>
+        <div class="fact-row"><span>Gallery (Activity Photos)</span><span>Full CRUD with image upload</span></div>
+        <div class="fact-row"><span>Authentication / Admin</span><span>Login with JWT &middot; protected routes</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT SCOPE -->
+  <section id="pd-scope-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Scope</div>
+        <h2>Project Scope</h2>
+        <p class="section-sub">The full system scope of the project, with the honest status of each part.</p>
+      </div>
+      <div class="pd-legend">
+        <span class="lg-done">Completed (Backend API)</span>
+        <span class="lg-planned">Planned / In Progress</span>
+      </div>
+      <div class="pd-scope">
+        <div class="pd-scope-row">
+          <div>
+            <h3>1. General Temple Information</h3>
+            <p>Temple history, the Luang Pho Than Chai Buddha image, important places, temple rules, contact information, Buddhist principles, important religious days, nearby attractions, and address / map.</p>
+          </div>
+          <span class="pd-scope-status pd-status-done">Completed</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>2. News System</h3></div>
+          <span class="pd-scope-status pd-status-done">Completed</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>3. Activity Photo Gallery</h3></div>
+          <span class="pd-scope-status pd-status-done">Completed</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>4. Monk Information</h3></div>
+          <span class="pd-scope-status pd-status-done">Completed</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>5. Member System</h3></div>
+          <span class="pd-scope-status pd-status-planned">Planned</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>6. Discussion Board</h3></div>
+          <span class="pd-scope-status pd-status-planned">Planned</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>7. Monk Works &amp; Achievements</h3></div>
+          <span class="pd-scope-status pd-status-planned">Planned</span>
+        </div>
+        <div class="pd-scope-row">
+          <div><h3>8. Temple Equipment Registry</h3></div>
+          <span class="pd-scope-status pd-status-planned">Planned</span>
+        </div>
+      </div>
+      <p class="pd-note">"Completed" refers to the Backend REST API for that system. The frontend for all systems is currently under development.</p>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="pd-stack">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Technologies</div>
+        <h2>Tech Stack</h2>
+      </div>
+      <div class="tag-row">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Node.js</span>
+        <span class="tag">Express.js</span>
+        <span class="tag">MySQL</span>
+        <span class="tag">REST API</span>
+        <span class="tag">JWT</span>
+        <span class="tag">bcrypt</span>
+        <span class="tag">Multer</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Git / GitHub</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEVELOPMENT PROCESS -->
+  <section id="pd-process">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">How I built it</div>
+        <h2>Development Process</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 1</div>
+          <h3>Requirements</h3>
+          <p>Defined the project scope from the temple's needs — 8 systems covering public information and admin management.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 2</div>
+          <h3>Database Design</h3>
+          <p>Designed the MySQL schema (schema.sql) covering every data module of the system.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 3</div>
+          <h3>Backend REST API</h3>
+          <p>Built Express.js routes and controllers for each module, with validation and error handling.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 4</div>
+          <h3>Authentication</h3>
+          <p>Admin login with JWT and bcrypt password hashing — write operations are protected.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 5</div>
+          <h3>Image Upload</h3>
+          <p>Configured Multer: image files only, 5 MB limit, filenames renamed automatically.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">Step 6</div>
+          <h3>API Testing</h3>
+          <p>Tested every endpoint with Postman, including the login-protected admin routes.</p>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when">In Progress</div>
+          <h3>Frontend</h3>
+          <p>Currently under development — the public website and admin pages that consume the API.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GITHUB CTA -->
+  <section class="pd-cta">
+    <div class="wrap">
+      <h2>View the Project on GitHub</h2>
+      <p>The repository includes the full source code, the database schema (schema.sql), and a README with complete API endpoint documentation and setup instructions.</p>
+      <div class="pd-hero-actions">
+        <a href="https://github.com/PywrksBook/website-watnaku-backend-v1" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
+        <a href="index.html" class="btn btn-ghost">&larr; Back to Portfolio</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2569 ปิยวัฒน์ เรืองรักษา</span>
+    <span>HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+</body>
+</html>
