@@ -89,9 +89,9 @@ const translations = {
     contactPhone: "โทรศัพท์",
     contactPhoneValue: "080-081-6814",
     contactGithub: "GitHub",
-    contactGithubValue: "github........",
+    contactGithubValue: "github.com/PywrksBook",
     contactLinkedin: "LinkedIn",
-    contactLinkedinValue: "linkedin........",
+    contactLinkedinValue: "linkedin.com/in/piyawat-reangraksa",
     
     // Footer
     footerCopyright: "© 2569 ปิยวัฒน์ เรืองรักษา"
@@ -172,9 +172,9 @@ const translations = {
     contactPhone: "Phone",
     contactPhoneValue: "080-081-6814",
     contactGithub: "GitHub",
-    contactGithubValue: "github........",
+    contactGithubValue: "github.com/PywrksBook",
     contactLinkedin: "LinkedIn",
-    contactLinkedinValue: "linkedin........",
+    contactLinkedinValue: "linkedin.com/in/piyawat-reangraksa",
     
     // Footer
     footerCopyright: "© 2026 Piyawat Reangraksa"
