@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Piyawat Reangraksa-Portfolio</title>
+<meta name="description" content="Piyawat Reangraksa — 4th-year Business Computer student and aspiring Web Developer, seeking a co-op internship. Full-stack projects with HTML, CSS, JavaScript, Node.js, Express, and MySQL.">
+<meta property="og:title" content="Piyawat Reangraksa — Portfolio">
+<meta property="og:description" content="4th-year Business Computer student and aspiring Web Developer, seeking a co-op internship.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="translations.js" defer></script>
+</head>
+<body>
+
+<div id="progress"></div>
+
+<header id="site-header">
+  <nav class="nav">
+    <a href="#top" class="logo"><span class="logo-mark"></span>Portfolio</a>
+    <div class="nav-links">
+      <a href="#about" data-key="navAbout">เกี่ยวกับผม</a>
+      <a href="#work" data-key="navWork">ประสบการณ์ทำงาน</a>
+      <a href="#skills" data-key="navSkills">ทักษะ</a>
+      <a href="#projects" data-key="navProjects">โปรเจกต์</a>
+      <a href="#contact" data-key="navContact">ติดต่อ</a>
+    </div>
+    <button id="lang-toggle" class="nav-cta lang-btn">TH / EN</button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1><span class="hero-greeting" data-key="heroGreeting">Hello, I'm</span><span class="name-line"><span id="typed-name"></span><span class="cursor"></span></span></h1>
+        <p class="hero-desc" data-key="heroDesc">
+            ผมเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาการจัดการ สาขาวิชาคอมพิวเตอร์ธุรกิจ
+          สนใจการพัฒนาเว็บไซต์แบบ Full-stack, REST API และระบบฐานข้อมูล 
+          กำลังมองหาโอกาสฝึกงานสหกิจศึกษาในตำแหน่ง Web Developer เพื่อพัฒนาทักษะและเรียนรู้จากการทำงานจริง
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" data-key="heroButton1">ดูผลงานของผม</a>
+          <a href="resume_piyawat_reangraksa.pdf" class="btn btn-ghost" data-key="heroButton2" download>ดาวน์โหลดเรซูเม่</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="frame-glow"></div>
+        <div class="frame">
+          <div class="frame-border"></div>
+          <div class="frame-fill">
+            <img class="profile-image" src="img/Me.png" alt="รูปโปรไฟล์ของ Piyawat Reangraksa">
+            <div class="frame-corner tl"></div>
+            <div class="frame-corner br"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap about-section-heading">
+      <h2 data-key="aboutTitle">About Me</h2>
+    </div>
+    <div class="wrap about-grid">
+      <div class="reveal">
+        <div class="about-text">
+          <p data-key="aboutDesc1">ผมสนใจการพัฒนาเว็บไซต์แบบ Full-stack และกำลังพัฒนาทักษะด้าน Frontend, Backend และฐานข้อมูลผ่านการทำโปรเจกต์จริงและ พร้อมเรียนรู้และเปิดรับเทคโนโลยีใหม่ เพื่อพัฒนาทักษะของตนเองอย่างต่อเนื่อง</p> 
+          <p data-key="aboutDesc2">นอกจากการเรียน ผมมีประสบการณ์ทำงานด้านระบบ POS การจัดการสต็อก การจัดทำรายงาน และการแก้ไขปัญหาอุปกรณ์คอมพิวเตอร์เบื้องต้น ทำให้ได้เรียนรู้การทำงานอย่างเป็นระบบ การตรวจสอบและแก้ไขปัญหา รวมถึงการทำงานร่วมกับผู้อื่นในสถานการณ์จริง</p>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="fact-list">
+          <div class="fact-row"><span data-key="factStatus">สถานะ</span><span data-key="factStatusValue">นักศึกษาปี 4 / พร้อมสหกิจศึกษา</span></div>
+          <div class="fact-row"><span data-key="factInstitute">สถาบัน</span><span data-key="factInstituteValue">มหาวิทยาลัยราชภัฏราชนครินทร์</span></div>
+          <div class="fact-row"><span data-key="factMajor">คณะ / สาขา</span><span data-key="factMajorValue">วิทยาการจัดการ — คอมพิวเตอร์ธุรกิจ</span></div>
+          <div class="fact-row"><span data-key="factLocation">ที่อยู่</span><span data-key="factLocationValue">ฉะเชิงเทรา, ประเทศไทย</span></div>
+          <div class="fact-row"><span data-key="factPosition">ตำแหน่งที่สนใจ</span><span data-key="factPositionValue">Web Developer</span></div>
+          <div class="fact-row"><span data-key="factCoop">ช่วงสหกิจศึกษา</span><span data-key="factCoopValue">19 พฤศจิกายน 2569 – 26 กุมภาพันธ์ 2570</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 data-key="workTitle">ประสบการณ์การทำงาน</h2>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when" data-key="workJob1Date">5 มีนาคม 2566 — ปัจจุบัน</div>
+          <h3 data-key="workJob1Title">IT &amp; Store Support</h3>
+          <div class="org" data-key="workJob1Company">บริษัท แม่เอียดปลาส้มแปดริ้ว จำกัด</div>
+          <ul class="timeline-list">
+            <li data-key="workJob1Item1">สนับสนุนการใช้งานระบบ POS ของร้านทั้ง 2 สาขา</li>
+            <li data-key="workJob1Item2">ประสานงานกับฝ่าย Support เมื่อพบปัญหาที่เกี่ยวข้องกับระบบ POS</li>
+            <li data-key="workJob1Item3">Export ข้อมูลจากการขายและ นำมาสรุปเป็นไฟล์ Excel</li>
+            <li data-key="workJob1Item4">ตรวจสอบและแก้ไขปัญหาเบื้องต้นของอุปกรณ์ฮาร์ดแวร์ เช่น คอมพิวเตอร์ เครื่อง POS เครื่องพิมพ์ใบเสร็จ และเครื่องสแกน</li>
+            <li data-key="workJob1Item5">ติดตั้งและตั้งค่าอุปกรณ์ให้พร้อมใช้งาน</li>
+            <li data-key="workJob1Item6">รับผิดชอบการจัดหาอุปกรณ์ ติดตั้ง และทดสอบการใช้งาน</li>
+            <li data-key="workJob1Item7">ประสานงานกับเจ้าของร้านและเพื่อนร่วมงานเพื่อแก้ไขปัญหาหน้างาน</li>
+          </ul>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="when" data-key="workJob2Date">มีนาคม 2565 — พฤษภาคม 2565</div>
+          <h3 data-key="workJob2Title">ประสบการณ์ฝึกงาน</h3>
+          <div class="org" data-key="workJob2Company">บริษัท โกลเด้น ซัน คอนสตรัก จำกัด</div>
+          <ul class="timeline-list">
+            <li data-key="workJob2Item1">ช่วยงานติดตั้งระบบไฟฟ้าภายในโรงงาน</li>
+            <li data-key="workJob2Item2">ใช้เครื่องมือพื้นฐานและปฏิบัติงานตามขั้นตอนความปลอดภัยของโรงงาน</li>
+            <li data-key="workJob2Item3">ทำงานร่วมกับทีมและปฏิบัติงานตามคำแนะนำของผู้มีประสบการณ์</li>
+            <li data-key="workJob2Item4">เรียนรู้และปฏิบัติงานใหม่จากสถานการณ์จริงหน้างาน</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 data-key="skillsTitle">Technical Skills</h2>
+      </div>
+      <div class="skill-groups">
+
+        <div class="skill-card cat-frontend reveal">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 2 12 8 20"></polyline><polyline points="16 4 22 12 16 20"></polyline></svg></div>
+            <div>
+              <h3 data-key="skillFrontend">Frontend</h3>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg></span>HTML5 &amp; CSS3</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 3L4 14h7l-1 7 9-11h-7l1-7z"/></svg></span>JavaScript</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="6" width="18" height="12" rx="1"/></svg></span>Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skill-card cat-backend reveal">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/><circle cx="7" cy="7" r="0.5"/><circle cx="7" cy="17" r="0.5"/></svg></div>
+            <div>
+              <h3 data-key="skillBackend">Backend</h3>
+
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg></span>Node.js</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M12 4v16"/></svg></span>Express</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17V7l8-4 8 4v10l-8 4-8-4z"/></svg></span>REST API</span>
+          </div>
+        </div>
+
+        <div class="skill-card cat-mobile reveal">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 2 12 8 20"></polyline><polyline points="16 4 22 12 16 20"></polyline></svg></div>
+            <div>
+              <h3 data-key="skillLanguages">Programming-Languages</h3>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4"/></svg></span>JavaScript</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span>C++</span>
+          </div>
+        </div>
+
+        <div class="skill-card cat-database reveal">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+            <div>
+              <h3 data-key="skillDatabase">Database</h3>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>MySQL</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></span>MariaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-card cat-tools reveal">
+          <div class="skill-card-head">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 10-5.4 5.4L4 17v3h3l5.3-5.3a4 4 0 005.4-5.4l-2.1 2.1-2-2z"/></svg></div>
+            <div>
+              <h3 data-key="skillTools">Tools</h3>
+            </div>
+          </div>
+          <div class="tag-row">
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 8v8M8 6h4a4 4 0 014 4"/></svg></span>Git &amp; GitHub</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></span>Xampp</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>VS Code</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>Postman</span>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 data-key="projectsTitle">Projects</h2>
+      </div>
+      <div class="project-list">
+
+        <div class="project-card reveal">
+          <div class="project-visual">
+            <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="15" y="20" width="70" height="50" rx="3" stroke="#6FCB92" stroke-width="2"/>
+              <line x1="15" y1="32" x2="85" y2="32" stroke="#6FCB92" stroke-width="2"/>
+              <circle cx="22" cy="26" r="1.6" fill="#6FCB92"/>
+              <circle cx="28" cy="26" r="1.6" fill="#6FCB92"/>
+              <rect x="24" y="42" width="52" height="6" rx="1" fill="#2F6B46"/>
+              <rect x="24" y="54" width="34" height="6" rx="1" fill="#2F6B46"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-tag" data-key="projectTag">เว็บไซต์ประชาสัมพันธ์และจัดการข้อมูล</div>
+            <h3 data-key="projectTitle">เว็บไซต์วัดนาคูโมทนามัยปุญญาราม</h3>
+            <p data-key="projectDesc">เว็บไซต์สำหรับเผยแพร่ข้อมูล ข่าวประชาสัมพันธ์ และกิจกรรมของวัด พร้อมระบบจัดการข้อมูลสำหรับผู้ดูแลเว็บไซต์ เช่น ข้อมูลพระสงฆ์ ภาพกิจกรรม ข่าวประชาสัมพันธ์ และทะเบียนอุปกรณ์วัด</p>
+            <div class="project-stack">
+              <span class="stack-pill">HTML</span>
+              <span class="stack-pill">CSS</span>
+              <span class="stack-pill">JavaScript</span>
+              <span class="stack-pill">Express.js</span>
+               <span class="stack-pill">MySQL</span>
+            </div>
+            <a href="#" class="project-link" data-key="projectLink">ดูรายละเอียดโปรเจกต์</a>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <h2 data-key="contactTitle">Contact Me</h2>
+      </div>
+    </div>
+    <div class="wrap contact-grid">
+      <div class="reveal">
+        <p data-key="contactDesc">กำลังมองหาโอกาสสหกิจศึกษาในสายงานด้าน Web Development และ Software Development หรือสายงานที่เกี่ยวข้อง
+           ยินดีพูดคุยและตอบกลับทุกข้อความครับ</p>
+      
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyawat2162@gmail.com&su=Contact%20from%20Portfolio" target="_blank" rel="noopener" class="btn btn-primary" data-key="contactButton">ส่งอีเมลถึงผม</a>
+      </div>
+      <div class="reveal contact-list">
+        <div class="contact-row"><span data-key="contactEmail">อีเมล</span><span data-key="contactEmailValue">piyawat2162@gmail.com</span></div>
+        <div class="contact-row"><span data-key="contactPhone">โทรศัพท์</span><span data-key="contactPhoneValue">080-081-6814</span></div>
+        <div class="contact-row"><span data-key="contactGithub">GitHub</span><a href="https://github.com/PywrksBook" target="_blank" rel="noopener"><span data-key="contactGithubValue">github.com/PywrksBook</span></a></div>
+        <div class="contact-row"><span data-key="contactLinkedin">LinkedIn</span><a href="https://www.linkedin.com/in/piyawat-reangraksa-0799b9436/" target="_blank" rel="noopener"><span data-key="contactLinkedinValue">linkedin.com/in/piyawat-reangraksa</span></a></div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span data-key="footerCopyright">© 2569 ปิยวัฒน์ เรืองรักษา</span>
+    <span data-key="footerCredit">  HTML, CSS &amp; JavaScript</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
