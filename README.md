@@ -2,13 +2,8 @@
 
 เว็บไซต์แสดงผลงานส่วนตัว สำหรับนำเสนอทักษะ ประสบการณ์การทำงาน และโปรเจกต์ที่ผ่านมา
 
-## คุณสมบัติหลัก
+🌐 **เว็บไซต์ออนไลน์:** https://pywrksbook.github.io/portfolio/
 
-- รองรับสองภาษา (ไทย/อังกฤษ) สลับได้ด้วยปุ่มเดียว
-- ออกแบบแบบ Responsive รองรับทุกขนาดหน้าจอ
-- มี Smooth scroll และ Animation เมื่อเลื่อนดู
-- ธีมสีเข้ม (Dark theme) พร้อมสีเขียวเป็นจุดเด่น
-- ปฏิบัติตามมาตรฐาน Web Accessibility
 
 ## เทคโนโลยีที่ใช้
 
@@ -27,33 +22,11 @@ Portfolio Book/
 ├── style.css            ไฟล์สไตล์ทั้งหมด
 ├── script.js            การทำงานแบบ Interactive
 ├── translations.js      ข้อมูลภาษา (TH/EN)
+├── resume_piyawat_reangraksa.pdf  เรซูเม่ (ดาวน์โหลดได้จากหน้าเว็บ)
 ├── img/                 โฟลเดอร์รูปภาพ
 │   └── Me.png          รูปโปรไฟล์
 └── README.md           ไฟล์นี้
 ```
-
-## วิธีใช้งาน
-
-### ความต้องการ
-
-- Web Browser สมัยใหม่ (Chrome, Firefox, Safari, Edge)
-- Local web server สำหรับการพัฒนา (แนะนำ)
-
-### การติดตั้ง
-
-1. Clone หรือดาวน์โหลด repository นี้
-   ```bash
-   git clone https://github.com/PywrksBook/portfolio.git
-   cd portfolio
-   ```
-
-2. เปิดด้วย Live Server (แนะนำ)
-   - ติดตั้ง extension "Live Server" ใน VS Code
-   - คลิกขวาที่ index.html แล้วเลือก "Open with Live Server"
-
-3. หรือเปิดในเบราว์เซอร์โดยตรง
-   - ดับเบิลคลิกที่ index.html
-   - หรือลากไฟล์เข้าไปในเบราว์เซอร์
 
 ## รายละเอียดฟีเจอร์
 
@@ -77,11 +50,25 @@ Portfolio Book/
 - ใช้ Intersection Observer API เพื่อประสิทธิภาพที่ดี
 - ปิดอัตโนมัติสำหรับผู้ใช้ที่ไม่ต้องการ animation
 
+### หน้า Project Detail
+- กด "ดูรายละเอียดโปรเจกต์" จากการ์ดโปรเจกต์เพื่อเปิดหน้ารายละเอียด
+- แสดงเป็นหน้าต่างแบบ Modal บนฉากหลังมืด พร้อมปุ่ม X ปิดกลับหน้าหลัก
+- แสดง Role / Period / สถานะโปรเจกต์ / Tech Stack / Key Responsibilities
+- ลิงก์ไปยัง GitHub Repository ของโปรเจกต์
+
+### ช่องทางติดต่อ
+- ปุ่มส่งอีเมล (เปิด Gmail พร้อมหัวข้อส่งถึง)
+- ปุ่ม ADD LINE ID (เปิดหน้าโปรไฟล์ LINE)
+- ลิงก์ GitHub และ LinkedIn ในรายการติดต่อ
+
 ## ข้อมูลติดต่อ
 
 - Email: piyawat2162@gmail.com
 - Phone: 080-081-6814
 - Location: Chachoengsao, Thailand
+- GitHub: [github.com/PywrksBook](https://github.com/PywrksBook)
+- LinkedIn: [piyawat-reangraksa](https://www.linkedin.com/in/piyawat-reangraksa-0799b9436/)
+- LINE: เพิ่มเพื่อนผ่านปุ่ม "ADD LINE ID" บนหน้าเว็บ
 
 ## การศึกษา
 
@@ -92,7 +79,7 @@ Portfolio Book/
 ## ทักษะทางเทคนิค
 
 - Frontend: HTML5, CSS3, JavaScript, Responsive Design
-- Backend: Node.js, Express.js, REST API
+- Backend: Node.js, Express.js, REST API, JWT, bcrypt, Multer
 - Database: MySQL, MariaDB
 - Tools: Git & GitHub, VS Code, Postman, XAMPP
 
@@ -105,30 +92,14 @@ Portfolio Book/
 5. Projects - ผลงานที่ทำมา
 6. Contact - ช่องทางการติดต่อ
 
-## เบราว์เซอร์ที่รองรับ
-
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
-
 ## Responsive Breakpoints
 
 - Desktop: มากกว่า 860px
 - Tablet/Mobile: น้อยกว่าหรือเท่ากับ 860px
 
-## แผนการพัฒนาในอนาคต
-
-- เพิ่มโปรเจกต์ใหม่ ๆ เข้าไปในส่วน Showcase
-- เพิ่มปุ่มสลับ Dark/Light theme
-- เพิ่มส่วน Blog
-- เชื่อมต่อกับ GitHub API เพื่อแสดง repositories
-- เพิ่มฟอร์มติดต่อพร้อม backend
-- ปรับปรุงเมนูมือถือให้เป็น hamburger menu
-
 ## License
 
-โปรเจกต์นี้เป็น open source และใช้ MIT License
+โปรเจกต์นี้เป็นผลงานส่วนบุคคลเพื่อการสมัครฝึกงาน — สามารถดูโค้ดเพื่อศึกษาได้ ห้ามนำไปใช้เชิงพาณิชย์โดยไม่ได้รับอนุญาต
 
 ## ผู้พัฒนา
 
