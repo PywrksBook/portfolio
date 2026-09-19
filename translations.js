@@ -24,14 +24,14 @@ const translations = {
     
     // Hero Section
     heroGreeting: "Hello, I'm",
-    heroDesc: "ผมเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาการจัดการ สาขาวิชาคอมพิวเตอร์ธุรกิจ\n          สนใจการพัฒนาเว็บไซต์แบบ Full-stack, REST API และระบบฐานข้อมูล \n          กำลังมองหาโอกาสฝึกงานสหกิจศึกษาในตำแหน่ง Web Developer เพื่อพัฒนาทักษะและเรียนรู้จากการทำงานจริง",
+    heroDesc: "ผมเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาการจัดการ สาขาวิชาคอมพิวเตอร์ธุรกิจ สนใจการพัฒนา Web Application และการแก้ปัญหาด้วยซอฟต์แวร์ กำลังพัฒนาทักษะด้าน Full-stack Development, REST API และ Database ผ่านการทำโปรเจกต์จริง พร้อมมองหาโอกาสฝึกงานสหกิจศึกษาในตำแหน่ง Web Developer",
     heroButton1: "ดูผลงานของผม",
     heroButton2: "ดาวน์โหลดเรซูเม่",
     
     // About Section
     aboutTitle: "About Me",
-    aboutDesc1: "ผมสนใจการพัฒนาเว็บไซต์แบบ Full-stack และกำลังพัฒนาทักษะด้าน Frontend, Backend และฐานข้อมูลผ่านการทำโปรเจกต์จริงและ พร้อมเรียนรู้และเปิดรับเทคโนโลยีใหม่ เพื่อพัฒนาทักษะของตนเองอย่างต่อเนื่อง",
-    aboutDesc2: "นอกจากการเรียน ผมมีประสบการณ์ทำงานด้านระบบ POS การจัดการสต็อก การจัดทำรายงาน และการแก้ไขปัญหาอุปกรณ์คอมพิวเตอร์เบื้องต้น ทำให้ได้เรียนรู้การทำงานอย่างเป็นระบบ การตรวจสอบและแก้ไขปัญหา รวมถึงการทำงานร่วมกับผู้อื่นในสถานการณ์จริง",
+    aboutDesc1: "ผมสนใจการพัฒนาเว็บไซต์แบบ Full-stack และให้ความสำคัญกับทักษะพื้นฐาน (Fundamentals) ด้านการเขียนโปรแกรม การจัดการข้อมูล ฐานข้อมูล และการออกแบบระบบ เพราะเชื่อว่าการเข้าใจพื้นฐานช่วยให้สามารถวิเคราะห์ปัญหาและพัฒนาระบบที่นำไปใช้งานจริงได้ ปัจจุบันผมกำลังพัฒนาทักษะเหล่านี้ผ่านการทำโปรเจกต์จริง และพร้อมเรียนรู้เทคโนโลยีใหม่ ๆ อย่างต่อเนื่อง",
+    aboutDesc2: "จากประสบการณ์ทำงานด้านระบบ POS การจัดการสต็อก การประสานงานกับฝ่ายซัพพอร์ต การจัดทำรายงาน และการแก้ไขปัญหาอุปกรณ์คอมพิวเตอร์ ผมได้เรียนรู้กระบวนการทำงานและปัญหาที่เกิดขึ้นในธุรกิจจริง จึงสนใจการนำความรู้ด้านการพัฒนาซอฟต์แวร์มาช่วยแก้ปัญหาและปรับปรุงกระบวนการทำงานให้มีประสิทธิภาพมากขึ้น",
     factStatus: "สถานะ",
     factStatusValue: "นักศึกษาปี 4 / พร้อมสหกิจศึกษา",
     factInstitute: "สถาบัน",
@@ -84,6 +84,7 @@ const translations = {
     contactTitle: "Contact Me",
     contactDesc: "กำลังมองหาโอกาสสหกิจศึกษาในสายงานด้าน Web Development และ Software Development หรือสายงานที่เกี่ยวข้อง\n           ยินดีพูดคุยและตอบกลับทุกข้อความครับ",
     contactButton: "ส่งอีเมลถึงผม",
+    contactLineButton: "ADD LINE ID",
     contactEmail: "อีเมล",
     contactEmailValue: "piyawat2162@gmail.com",
     contactPhone: "โทรศัพท์",
@@ -107,14 +108,14 @@ const translations = {
     
     // Hero Section
     heroGreeting: "Hello, I'm",
-    heroDesc: "I am a 4th-year student in Business Computer from Faculty of Management. Interested in Full-stack web development, REST API, and database systems. Looking for a software engineering co-op opportunity to develop skills and learn from real-world experience.",
+    heroDesc: "I am a 4th-year student in Business Computer, Faculty of Management. I am interested in developing web applications and solving problems with software, and I am currently building skills in full-stack development, REST APIs, and databases through real projects — looking for a co-op internship opportunity as a Web Developer.",
     heroButton1: "View My Work",
     heroButton2: "Download Resume",
     
     // About Section
     aboutTitle: "About Me",
-    aboutDesc1: "I'm interested in Full-stack web development and actively developing skills in Frontend, Backend, and Database through real projects. I'm eager to learn and embrace new technologies to continuously improve my skills.",
-    aboutDesc2: "In addition to my studies, I have work experience with POS systems, inventory management, report generation, and basic computer troubleshooting. This has taught me systematic work processes, problem-solving, and collaboration in real-world situations.",
+    aboutDesc1: "I am interested in full-stack web development and I value strong fundamentals — programming, data management, databases, and system design — because understanding the basics makes it possible to analyze problems and build systems that work in the real world. I am currently developing these skills through real projects and am always ready to learn new technologies.",
+    aboutDesc2: "Through work experience with POS systems, inventory management, support coordination, reporting, and computer troubleshooting, I learned how real businesses operate and the problems they face. This led me to apply software development knowledge to solve problems and improve work processes more efficiently.",
     factStatus: "Status",
     factStatusValue: "4th Year Student / Ready for Co-op",
     factInstitute: "Institution",
@@ -167,6 +168,7 @@ const translations = {
     contactTitle: "Contact Me",
     contactDesc: "Looking for co-op opportunities in Web Development and Software Development fields or related positions. Happy to chat and respond to all messages.",
     contactButton: "Send Me Email",
+    contactLineButton: "ADD LINE ID",
     contactEmail: "Email",
     contactEmailValue: "piyawat2162@gmail.com",
     contactPhone: "Phone",
