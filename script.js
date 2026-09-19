@@ -6,6 +6,7 @@
 // Scroll progress bar
 const progress = document.getElementById('progress');
 const header = document.getElementById('site-header');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 window.addEventListener('scroll', () => {
   const h = document.documentElement;
   const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
@@ -61,7 +62,6 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
  * Reveal on scroll animation
  * ใช้ IntersectionObserver เพื่อ performance ที่ดีกว่าการฟัง scroll event
  */
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const revealEls = document.querySelectorAll('.reveal');
 if (reduceMotion) {
   // ถ้าผู้ใช้ตั้งค่าให้ลด motion ก็แสดงทันที

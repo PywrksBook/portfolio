@@ -22,6 +22,8 @@
 ```
 Portfolio Book/
 ├── index.html           หน้าเว็บหลัก
+├── project-watnaku.html หน้ารายละเอียดโปรเจกต์ (Modal)
+├── project-watnaku.css  สไตล์หน้ารายละเอียดโปรเจกต์
 ├── style.css            ไฟล์สไตล์ทั้งหมด
 ├── script.js            การทำงานแบบ Interactive
 ├── translations.js      ข้อมูลภาษา (TH/EN)
@@ -41,7 +43,7 @@ Portfolio Book/
 
 1. Clone หรือดาวน์โหลด repository นี้
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/PywrksBook/portfolio.git
    cd portfolio
    ```
 

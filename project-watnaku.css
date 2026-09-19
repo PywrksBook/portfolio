@@ -66,7 +66,7 @@ body{
 }
 .pd-text{ color:var(--text-dim); max-width:72ch; margin-bottom:14px; }
 .pd-text:last-child{ margin-bottom:0; }
-.pd-text strong{ color:var(--text); font-weight:500; }
+.pd-text strong{ color:var(--accent); font-weight:500; }
 
 /* ป้ายสถานะ */
 .pd-badges{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:22px; }
@@ -94,7 +94,7 @@ body{
   flex-shrink:0; margin-top:9px;
 }
 .pd-resp-card p{ color:var(--text-dim); font-size:0.95rem; line-height:1.7; margin:0; }
-.pd-resp-card p strong{ color:var(--text); font-weight:500; }
+.pd-resp-card p strong{ color:var(--accent); font-weight:500; }
 
 /* ---- CTA ท้ายหน้าต่าง ---- */
 .pd-cta{

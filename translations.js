@@ -52,7 +52,7 @@ const translations = {
     workJob1Date: "5 มีนาคม 2566 — ปัจจุบัน",
     workJob1Item1: "สนับสนุนการใช้งานระบบ POS ของร้านทั้ง 2 สาขา",
     workJob1Item2: "ประสานงานกับฝ่าย Support เมื่อพบปัญหาที่เกี่ยวข้องกับระบบ POS",
-    workJob1Item3: "Export ข้อมูลจากการขายและ นำมาสรุปเป็นไฟล์ Excel",
+    workJob1Item3: "Export ข้อมูลจากการขายและนำมาสรุปเป็นไฟล์ Excel",
     workJob1Item4: "ตรวจสอบและแก้ไขปัญหาเบื้องต้นของอุปกรณ์ฮาร์ดแวร์ เช่น คอมพิวเตอร์ เครื่อง POS เครื่องพิมพ์ใบเสร็จ และเครื่องสแกน",
     workJob1Item5: "ติดตั้งและตั้งค่าอุปกรณ์ให้พร้อมใช้งาน",
     workJob1Item6: "รับผิดชอบการจัดหาอุปกรณ์ ติดตั้ง และทดสอบการใช้งาน",
@@ -69,13 +69,12 @@ const translations = {
     skillsTitle: "Technical Skills",
     skillFrontend: "Frontend",
     skillBackend: "Backend",
-    skillLanguages: "Programming-Languages",
+    skillLanguages: "Programming Languages",
     skillDatabase: "Database",
     skillTools: "Tools",
     
     // Projects Section
     projectsTitle: "Projects",
-    projectTag: "REST API สำหรับระบบจัดการข้อมูลวัด",
     projectTitle: "เว็บไซต์วัดนาคูโมทนามัยปุญญาราม",
     projectDesc: "พัฒนา Backend REST API สำหรับเว็บไซต์วัดนาคูโมทนามัยปุญญาราม ด้วย Node.js, Express.js และ MySQL รองรับการจัดการข้อมูลวัด พระสงฆ์ กิจกรรม ข่าวประชาสัมพันธ์ และภาพกิจกรรม พร้อมระบบยืนยันตัวตนผู้ดูแลด้วย JWT และ bcrypt รวมถึงระบบอัปโหลดรูปภาพด้วย Multer",
     projectLink: "ดูรายละเอียดโปรเจกต์",
@@ -95,7 +94,8 @@ const translations = {
     contactLinkedinValue: "linkedin.com/in/piyawat-reangraksa",
     
     // Footer
-    footerCopyright: "© 2569 ปิยวัฒน์ เรืองรักษา"
+    footerCopyright: "© 2569 ปิยวัฒน์ เรืองรักษา",
+    footerCredit: "สร้างด้วย HTML, CSS & JavaScript"
   },
   
   en: {
@@ -159,8 +159,7 @@ const translations = {
     
     // Projects Section
     projectsTitle: "Projects",
-    projectTag: "Temple Management REST API",
-    projectTitle: "Wat NaKuMothNammaiPunyaRam Website",
+    projectTitle: "Wat Nakhumothanamai Punyaram Website",
     projectDesc: "Developed a Backend REST API for the Wat Naku temple website using Node.js, Express.js, and MySQL, supporting management of temple information, monks, activities, news, and activity photos — with admin authentication via JWT and bcrypt, plus image uploads via Multer.",
     projectLink: "View Project Details",
     
@@ -179,6 +178,7 @@ const translations = {
     contactLinkedinValue: "linkedin.com/in/piyawat-reangraksa",
     
     // Footer
-    footerCopyright: "© 2026 Piyawat Reangraksa"
+    footerCopyright: "© 2026 Piyawat Reangraksa",
+    footerCredit: "Built with HTML, CSS & JavaScript"
   }
 };
