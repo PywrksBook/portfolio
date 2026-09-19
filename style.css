@@ -10,8 +10,8 @@
     --accent: #2F6B46;
     --accent-bright: #6FCB92;
     --accent-deep: #142A1C;
-    --serif: 'Noto Serif Thai', serif;
-    --sans: 'IBM Plex Sans Thai', sans-serif;
+    --serif: Arial, Helvetica, 'Noto Serif Thai', serif;
+    --sans: Arial, Helvetica, 'IBM Plex Sans Thai', sans-serif;
   }
 
   *{margin:0;padding:0;box-sizing:border-box;}

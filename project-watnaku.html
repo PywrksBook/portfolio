@@ -16,12 +16,12 @@
 <div class="pd-window">
   <a href="index.html" class="pd-close" aria-label="Close project details">&times;</a>
 
-  <!-- HERO -->
-  <header class="pd-hero">
+  <!-- HERO (ใช้ div ไม่ใช่ header เพื่อไม่ให้โดนกฎ position:fixed ของ style.css) -->
+  <div class="pd-hero">
     <div class="kicker">Project Details</div>
     <h1>Wat Nakhumothanamai Punyaram Website</h1>
     <p class="pd-subtitle">Website and backend system for Wat Nakhumothanamai Punyaram, developed to centralize temple information, news, activities, and other temple-related data. The project aims to reduce scattered information and bring relevant temple information and records together into a single system for easier access and management.</p>
-  </header>
+  </div>
 
   <!-- META: ROLE / PERIOD -->
   <div class="pd-meta">
@@ -68,17 +68,17 @@
   <!-- KEY RESPONSIBILITIES -->
   <section class="pd-section">
     <h2>Key Responsibilities</h2>
-    <ul class="timeline-list pd-resp">
-      <li>Gathered project requirements through interviews with temple staff to understand current information management and communication needs.</li>
-      <li>Analyzed the requirements and defined the project's scope, features, and data to be managed.</li>
-      <li>Designed and developed the backend REST API using <strong>Node.js and Express.js</strong>.</li>
-      <li>Implemented <strong>CRUD operations</strong> for managing temple information, monks, activities, news, and gallery data.</li>
-      <li>Connected the backend application with <strong>MySQL</strong> for database management.</li>
-      <li>Implemented administrator <strong>login and authentication</strong> using JWT and bcrypt.</li>
-      <li>Implemented image upload functionality using <strong>Multer</strong>.</li>
-      <li>Tested and verified API functionality using <strong>Postman</strong>.</li>
-      <li>Used <strong>Git and GitHub</strong> for source code management and version control.</li>
-    </ul>
+    <div class="pd-resp-grid">
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Gathered project requirements through interviews with temple staff to understand current information management and communication needs.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Analyzed the requirements and defined the project's scope, features, and data to be managed.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Designed and developed the backend REST API using <strong>Node.js and Express.js</strong>.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Implemented <strong>CRUD operations</strong> for managing temple information, monks, activities, news, and gallery data.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Connected the backend application with <strong>MySQL</strong> for database management.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Implemented administrator <strong>login and authentication</strong> using JWT and bcrypt.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Implemented image upload functionality using <strong>Multer</strong>.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Tested and verified API functionality using <strong>Postman</strong>.</p></div>
+      <div class="pd-resp-card"><span class="pd-resp-dot"></span><p>Used <strong>Git and GitHub</strong> for source code management and version control.</p></div>
+    </div>
   </section>
 
   <!-- CTA -->

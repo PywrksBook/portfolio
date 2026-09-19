@@ -37,7 +37,7 @@ body{
 }
 
 /* ---- Hero ---- */
-.pd-hero{ padding:72px 56px 40px; }
+.pd-hero{ padding:48px 56px 28px; }
 .pd-hero h1{
   font-family:var(--serif); font-weight:600;
   font-size:clamp(1.9rem, 3.5vw, 2.6rem);
@@ -77,10 +77,24 @@ body{
 .pd-badge-wip{ color:#E0A96D; border-color:#4A3A22; background:#2A2013; }
 .pd-badge-plan{ color:#8FB8E8; border-color:#24354A; background:#15202B; }
 
-/* Key Responsibilities (reuse .timeline-list จาก style.css) */
-.pd-resp{ max-width:none; }
-.pd-resp li{ margin-bottom:10px; font-size:0.97rem; }
-.pd-resp li strong{ color:var(--text); font-weight:500; }
+/* Key Responsibilities (การ์ด 2 คอลัมน์) */
+.pd-resp-grid{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.pd-resp-card{
+  display:flex; gap:12px; align-items:flex-start;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  padding:20px 22px;
+  transition:border-color .25s ease;
+}
+.pd-resp-card:hover{ border-color:var(--accent); }
+.pd-resp-dot{
+  width:8px; height:8px; border-radius:50%;
+  background:var(--accent-bright);
+  flex-shrink:0; margin-top:9px;
+}
+.pd-resp-card p{ color:var(--text-dim); font-size:0.95rem; line-height:1.7; margin:0; }
+.pd-resp-card p strong{ color:var(--text); font-weight:500; }
 
 /* ---- CTA ท้ายหน้าต่าง ---- */
 .pd-cta{
@@ -93,10 +107,11 @@ body{
 /* ---- Responsive ---- */
 @media (max-width: 720px){
   body{ padding:20px 10px; }
-  .pd-hero{ padding:64px 24px 30px; }
+  .pd-hero{ padding:44px 24px 22px; }
   .pd-meta{ grid-template-columns:1fr; }
   .pd-meta-item{ padding:16px 24px; }
   .pd-section{ padding:30px 24px; }
+  .pd-resp-grid{ grid-template-columns:1fr; }
   .pd-cta{ padding:30px 24px 40px; }
   .pd-close{ top:12px; right:12px; }
 }
