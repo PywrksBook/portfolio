@@ -1,79 +1,102 @@
 /*
- * Project Detail page (project-watnaku.html) — สไตล์เฉพาะหน้านี้เท่านั้น
- * หมายเหตุ: ส่วนใหญ่ reuse จาก style.css เดิม (.btn, .skill-card, .timeline,
- * .tag-row, .section-head, .fact-list ฯลฯ) — ไฟล์นี้มีแค่ของใหม่ที่จำเป็น
+ * Project Detail page (project-watnaku.html) — Modal-style window
+ * หน้าต่างลอยกลางฉากมืด มีปุ่ม X ปิด — reuse variables/components จาก style.css
  */
 
-/* ---- Hero ---- */
-.pd-hero{ padding:150px 0 70px; }
-.pd-title{
-  font-family:var(--serif); font-weight:600;
-  font-size:clamp(2rem, 4.5vw, 3.2rem);
-  line-height:1.25; margin-bottom:18px; max-width:26ch;
+/* ฉากหลังมืดทั้งจอ */
+body{
+  background:#050806;
+  padding:56px 20px;
+  min-height:100vh;
 }
-.pd-hero-desc{ color:var(--text-dim); max-width:62ch; margin-bottom:26px; }
-.pd-badges{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:34px; }
+
+/* ---- หน้าต่าง Modal ---- */
+.pd-window{
+  max-width:1080px;
+  margin:0 auto;
+  background:var(--bg);
+  border:1px solid var(--border);
+  border-radius:16px;
+  overflow:hidden;
+  position:relative;
+}
+
+/* ปุ่ม X ปิด (กลับไปหน้าหลัก) */
+.pd-close{
+  position:absolute; top:18px; right:18px; z-index:10;
+  width:42px; height:42px; border-radius:50%;
+  background:var(--surface);
+  border:1px solid var(--border);
+  color:var(--text);
+  font-size:1.3rem; line-height:1;
+  display:flex; align-items:center; justify-content:center;
+  transition:border-color .25s ease, color .25s ease, transform .25s ease;
+}
+.pd-close:hover, .pd-close:focus-visible{
+  border-color:var(--accent-bright); color:var(--accent-bright); transform:rotate(90deg);
+}
+
+/* ---- Hero ---- */
+.pd-hero{ padding:72px 56px 40px; }
+.pd-hero h1{
+  font-family:var(--serif); font-weight:600;
+  font-size:clamp(1.9rem, 3.5vw, 2.6rem);
+  line-height:1.25; margin-bottom:16px;
+}
+.pd-subtitle{ color:var(--text-dim); max-width:70ch; }
+
+/* ---- Meta: Role / Period ---- */
+.pd-meta{
+  display:grid; grid-template-columns:1fr 1fr;
+  gap:1px; background:var(--border);
+  border-top:1px solid var(--border); border-bottom:1px solid var(--border);
+}
+.pd-meta-item{ background:var(--bg-alt); padding:22px 56px; }
+.pd-meta-label{
+  color:var(--text-faint); font-size:0.75rem;
+  letter-spacing:0.12em; text-transform:uppercase; margin-bottom:6px;
+}
+.pd-meta-value{ color:var(--text); font-size:0.98rem; }
+
+/* ---- Sections ภายในหน้าต่าง ---- */
+.pd-section{ padding:40px 56px; }
+.pd-window h2{
+  font-family:var(--serif); font-weight:600;
+  font-size:1.45rem; margin-bottom:22px;
+}
+.pd-text{ color:var(--text-dim); max-width:72ch; margin-bottom:14px; }
+.pd-text:last-child{ margin-bottom:0; }
+.pd-text strong{ color:var(--text); font-weight:500; }
+
+/* ป้ายสถานะ */
+.pd-badges{ display:flex; gap:12px; flex-wrap:wrap; margin-bottom:22px; }
 .pd-badge{
   font-size:0.85rem; font-weight:500;
   padding:7px 14px; border-radius:20px; border:1px solid;
 }
-.pd-badge-done{ color:var(--accent-bright); border-color:var(--accent); background:var(--accent-deep); }
 .pd-badge-wip{ color:#E0A96D; border-color:#4A3A22; background:#2A2013; }
-.pd-hero-actions{ display:flex; gap:16px; flex-wrap:wrap; }
+.pd-badge-plan{ color:#8FB8E8; border-color:#24354A; background:#15202B; }
 
-/* ---- Overview ---- */
-#pd-overview{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
-.pd-overview{ max-width:72ch; }
-.pd-overview p{ color:var(--text-dim); margin-bottom:16px; font-size:1rem; }
-.pd-overview p:last-child{ margin-bottom:0; }
+/* Key Responsibilities (reuse .timeline-list จาก style.css) */
+.pd-resp{ max-width:none; }
+.pd-resp li{ margin-bottom:10px; font-size:0.97rem; }
+.pd-resp li strong{ color:var(--text); font-weight:500; }
 
-/* ---- What I Built / Backend Features ---- */
-#pd-built{ background:var(--bg); }
-#pd-features{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
-.pd-methods{ display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
-
-/* ---- Scope ---- */
-#pd-scope-section{ background:var(--bg); }
-.pd-legend{
-  display:flex; gap:24px; flex-wrap:wrap;
-  color:var(--text-faint); font-size:0.85rem; margin-bottom:26px;
-}
-.pd-legend span{ display:inline-flex; align-items:center; gap:8px; }
-.pd-legend span::before{ content:''; width:8px; height:8px; border-radius:50%; display:inline-block; }
-.pd-legend .lg-done::before{ background:var(--accent-bright); }
-.pd-legend .lg-planned::before{ background:var(--text-faint); }
-
-.pd-scope{ border-top:1px solid var(--border); }
-.pd-scope-row{
-  display:flex; justify-content:space-between; align-items:flex-start; gap:24px;
-  padding:20px 0; border-bottom:1px solid var(--border);
-}
-.pd-scope-row h3{ font-family:var(--serif); font-size:1.08rem; font-weight:600; }
-.pd-scope-row p{ color:var(--text-faint); font-size:0.85rem; margin-top:6px; max-width:64ch; line-height:1.6; }
-.pd-scope-status{
-  flex-shrink:0; font-size:0.8rem; font-weight:500;
-  padding:5px 12px; border-radius:20px; border:1px solid; white-space:nowrap; margin-top:2px;
-}
-.pd-status-done{ color:var(--accent-bright); border-color:var(--accent); background:var(--accent-deep); }
-.pd-status-planned{ color:var(--text-dim); border-color:var(--border); background:var(--bg-alt); }
-.pd-note{ color:var(--text-faint); font-size:0.86rem; margin-top:18px; }
-
-/* ---- Tech Stack ---- */
-#pd-stack{ background:var(--bg-alt); border-top:1px solid var(--border); border-bottom:1px solid var(--border); }
-#pd-stack .tag-row{ gap:10px; }
-
-/* ---- GitHub CTA ---- */
+/* ---- CTA ท้ายหน้าต่าง ---- */
 .pd-cta{
-  text-align:center; padding:80px 0;
-  background:var(--bg-alt); border-top:1px solid var(--border);
+  padding:44px 56px 56px;
+  border-top:1px solid var(--border);
+  background:var(--bg-alt);
 }
-.pd-cta h2{ margin-bottom:14px; }
-.pd-cta p{ color:var(--text-dim); max-width:56ch; margin:0 auto 30px; }
-.pd-cta .pd-hero-actions{ justify-content:center; }
+.pd-cta-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 
 /* ---- Responsive ---- */
-@media (max-width: 860px){
-  .pd-hero{ padding:120px 0 50px; }
-  .pd-scope-row{ flex-direction:column; gap:12px; align-items:flex-start; }
-  .pd-cta{ padding:60px 0; }
+@media (max-width: 720px){
+  body{ padding:20px 10px; }
+  .pd-hero{ padding:64px 24px 30px; }
+  .pd-meta{ grid-template-columns:1fr; }
+  .pd-meta-item{ padding:16px 24px; }
+  .pd-section{ padding:30px 24px; }
+  .pd-cta{ padding:30px 24px 40px; }
+  .pd-close{ top:12px; right:12px; }
 }
