@@ -45,6 +45,37 @@ body{
 }
 .pd-subtitle{ color:var(--text-dim); max-width:70ch; }
 
+/* ---- Gallery: ภาพประกอบผลงาน (ระหว่าง Hero กับ Meta) ---- */
+.pd-gallery{
+  display:grid; grid-template-columns:repeat(3, 1fr); gap:16px;
+  padding:0 56px 34px;
+}
+.pd-shot{
+  margin:0;
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:10px;
+  overflow:hidden;
+  transition:border-color .25s ease, transform .25s ease;
+}
+.pd-shot:hover{ border-color:var(--accent); transform:translateY(-3px); }
+.pd-shot img{
+  display:block; width:100%; aspect-ratio:16 / 10; height:auto;
+  object-fit:cover; object-position:top center;
+  border-bottom:1px solid var(--border);
+  background:#000;
+  cursor:zoom-in;
+}
+/* รูปแนวกว้างพิเศษ (ER diagram / ตาราง DB) — โชว์ครบทั้งภาพ ไม่ครอปข้าง */
+.pd-shot--wide img{
+  object-fit:contain; object-position:center;
+  background:#0A0D0B; padding:10px;
+}
+.pd-shot figcaption{
+  padding:12px 14px;
+  color:var(--text-dim); font-size:0.85rem; line-height:1.5;
+}
+
 /* ---- Meta: Role / Period ---- */
 .pd-meta{
   display:grid; grid-template-columns:1fr 1fr;
@@ -117,11 +148,52 @@ body{
 .pd-cta-actions{ display:flex; gap:14px; flex-wrap:wrap; }
 
 
+/* ---- Lightbox: คลิกเพื่อขยายรูปเต็ม ---- */
+.pd-lightbox{
+  position:fixed; inset:0; z-index:2000;
+  background:rgba(5,8,6,0.92);
+  backdrop-filter:blur(6px);
+  display:flex; align-items:center; justify-content:center;
+  padding:32px 20px;
+  opacity:0; visibility:hidden;
+  transition:opacity .25s ease, visibility .25s ease;
+}
+.pd-lightbox.open{ opacity:1; visibility:visible; }
+.pd-lightbox figure{
+  margin:0; max-width:min(1100px, 94vw); max-height:88vh;
+  display:flex; flex-direction:column;
+  background:var(--surface);
+  border:1px solid var(--border); border-radius:12px;
+  overflow:hidden;
+  transform:scale(.96); transition:transform .25s ease;
+}
+.pd-lightbox.open figure{ transform:scale(1); }
+.pd-lightbox img{
+  display:block; max-width:100%; max-height:calc(88vh - 90px);
+  width:auto; height:auto; margin:0 auto;
+  object-fit:contain; background:#000;
+}
+.pd-lightbox figcaption{
+  padding:12px 18px;
+  color:var(--text-dim); font-size:0.9rem; text-align:center;
+  border-top:1px solid var(--border);
+}
+.pd-lightbox-close{
+  position:absolute; top:18px; right:18px;
+  width:42px; height:42px; border-radius:50%;
+  background:var(--surface); border:1px solid var(--border);
+  color:var(--text); font-size:1.3rem; line-height:1; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:border-color .25s ease, color .25s ease, transform .25s ease;
+}
+.pd-lightbox-close:hover{ border-color:var(--accent-bright); color:var(--accent-bright); transform:rotate(90deg); }
+
 /* ---- Responsive ---- */
 @media (max-width: 720px){
   body{ padding:20px 10px; }
   .pd-hero{ padding:44px 24px 22px; }
   .pd-meta{ grid-template-columns:1fr; }
+  .pd-gallery{ grid-template-columns:1fr; padding:0 24px 26px; }
   .pd-meta-item{ padding:16px 24px; }
   .pd-section{ padding:30px 24px; }
   .pd-resp-grid{ grid-template-columns:1fr; }

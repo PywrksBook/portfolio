@@ -32,6 +32,34 @@
     <p class="pd-subtitle">Website and backend system for Wat Nakhumothanamai Punyaram, developed to centralize temple information, news, activities, and other temple-related data. The project aims to reduce scattered information and bring relevant temple information and records together into a single system for easier access and management.</p>
   </div>
 
+  <!-- GALLERY: ภาพประกอบผลงาน -->
+  <div class="pd-gallery">
+    <figure class="pd-shot">
+      <img src="img/test-api/test-api-get-all-monks.png" width="885" height="552" loading="lazy" alt="Postman test: GET /api/v1/monks returns 200 OK with monk data">
+      <figcaption>REST API — GET monks (200 OK)</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="img/login/login-success.png" width="910" height="519" loading="lazy" alt="Postman test: admin login success returns JWT token">
+      <figcaption>Admin login — JWT auth success</figcaption>
+    </figure>
+    <figure class="pd-shot pd-shot--wide">
+      <img src="img/er-diagram/er-diagram.png" width="987" height="216" loading="lazy" alt="ER diagram: admins, monks, activities, news and gallery tables">
+      <figcaption>Database design — ER diagram</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="img/test-api/test-api-table-watnaku.png" width="414" height="313" loading="lazy" alt="MySQL table: watnaku temple data structure">
+      <figcaption>MySQL — temple data table</figcaption>
+    </figure>
+    <figure class="pd-shot pd-shot--wide">
+      <img src="img/test-api/test-api-upload-watnaku-database.png" width="1543" height="237" loading="lazy" alt="MySQL database: uploaded abbot record stored">
+      <figcaption>Upload — record saved in database</figcaption>
+    </figure>
+    <figure class="pd-shot">
+      <img src="img/test-api/test-api-upload-watnaku-response.png" width="895" height="567" loading="lazy" alt="Postman test: image upload response with Multer">
+      <figcaption>Upload — API response (Multer)</figcaption>
+    </figure>
+  </div>
+
   <!-- META: ROLE / PERIOD -->
   <div class="pd-meta">
     <div class="pd-meta-item">
@@ -107,6 +135,55 @@
   </section>
 
 </div>
+
+<!-- LIGHTBOX: แสดงรูปขยายเต็ม -->
+<div class="pd-lightbox" id="pdLightbox" role="dialog" aria-modal="true" aria-label="Enlarged project image" hidden>
+  <button class="pd-lightbox-close" id="pdLightboxClose" aria-label="Close enlarged image">&times;</button>
+  <figure>
+    <img id="pdLightboxImg" src="" alt="">
+    <figcaption id="pdLightboxCap"></figcaption>
+  </figure>
+</div>
+
+<script>
+(function(){
+  var box = document.getElementById('pdLightbox');
+  var boxImg = document.getElementById('pdLightboxImg');
+  var boxCap = document.getElementById('pdLightboxCap');
+  var closeBtn = document.getElementById('pdLightboxClose');
+
+  function open(img){
+    boxImg.src = img.currentSrc || img.src;
+    boxImg.alt = img.alt || '';
+    var cap = img.closest('figure');
+    cap = cap ? cap.querySelector('figcaption') : null;
+    boxCap.textContent = cap ? cap.textContent : img.alt;
+    box.hidden = false;
+    requestAnimationFrame(function(){ box.classList.add('open'); });
+    document.body.style.overflow = 'hidden';
+    closeBtn.focus();
+  }
+
+  function close(){
+    box.classList.remove('open');
+    document.body.style.overflow = '';
+    setTimeout(function(){ box.hidden = true; boxImg.removeAttribute('src'); }, 250);
+  }
+
+  document.querySelectorAll('.pd-shot img').forEach(function(img){
+    img.setAttribute('tabindex', '0');
+    img.setAttribute('role', 'button');
+    img.addEventListener('click', function(){ open(img); });
+    img.addEventListener('keydown', function(e){
+      if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); open(img); }
+    });
+  });
+
+  closeBtn.addEventListener('click', close);
+  box.addEventListener('click', function(e){ if(e.target === box) close(); });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape' && !box.hidden) close(); });
+})();
+</script>
 
 </body>
 </html>
