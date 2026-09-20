@@ -34,7 +34,8 @@ function smoothScrollTo(targetY, duration){
     if (!startTime) startTime = timestamp;
     const elapsed = timestamp - startTime;
     const progressT = Math.min(elapsed / duration, 1);
-    window.scrollTo(0, startY + diff * easeInOutCubic(progressT));
+    // behavior:'instant' กัน CSS scroll-behavior:smooth มาซ้อนกับ animation ของเราเอง (ทำให้กระตุก)
+    window.scrollTo({ top: startY + diff * easeInOutCubic(progressT), left: 0, behavior: 'instant' });
     if (progressT < 1) requestAnimationFrame(step);
   }
   requestAnimationFrame(step);
@@ -51,7 +52,7 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     const headerHeight = header.offsetHeight;
     const targetY = target.getBoundingClientRect().top + window.scrollY - headerHeight + 1;
     if (reduceMotion) {
-      window.scrollTo(0, targetY);
+      window.scrollTo({ top: targetY, left: 0, behavior: 'instant' });
     } else {
       smoothScrollTo(targetY, 700);
     }
@@ -99,6 +100,35 @@ function typeName(){
   }
 }
 typeName();
+
+// ========================================
+// Mobile navigation (hamburger)
+// ========================================
+
+const navToggle = document.getElementById('nav-toggle');
+const navLinks = document.getElementById('nav-links');
+
+function setMenu(open) {
+  if (!navToggle || !navLinks) return;
+  navLinks.classList.toggle('open', open);
+  navToggle.setAttribute('aria-expanded', String(open));
+}
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener('click', () => {
+    setMenu(navToggle.getAttribute('aria-expanded') !== 'true');
+  });
+  // กดเมนูแล้วปิดเมนูอัตโนมัติ
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setMenu(false)));
+  // ปิดด้วยปุ่ม Esc
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') setMenu(false);
+  });
+  // ถ้าขยายหน้าจอเป็น desktop ให้รีเซ็ตสถานะเมนู
+  window.matchMedia('(min-width: 861px)').addEventListener('change', (e) => {
+    if (e.matches) setMenu(false);
+  });
+}
 
 // ========================================
 // Language Switching

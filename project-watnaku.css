@@ -74,6 +74,7 @@ body{
   font-size:0.85rem; font-weight:500;
   padding:7px 14px; border-radius:20px; border:1px solid;
 }
+.pd-badge-done{ color:var(--accent-bright); border-color:var(--accent); background:var(--accent-deep); }
 .pd-badge-wip{ color:#E0A96D; border-color:#4A3A22; background:#2A2013; }
 .pd-badge-plan{ color:#8FB8E8; border-color:#24354A; background:#15202B; }
 
@@ -96,6 +97,17 @@ body{
 .pd-resp-card p{ color:var(--text-dim); font-size:0.95rem; line-height:1.7; margin:0; }
 .pd-resp-card p strong{ color:var(--accent); font-weight:500; }
 
+/* Tech stack: แยกกลุ่ม "ใช้อยู่" / "วางแผน" */
+.pd-stack-group{ margin-bottom:22px; }
+.pd-stack-group:last-child{ margin-bottom:0; }
+.pd-stack-label{
+  color:var(--text-dim); font-size:0.85rem; font-weight:500;
+  margin-bottom:10px;
+}
+.pd-stack-note{ color:var(--accent-bright); font-weight:400; }
+.pd-stack-note-plan{ color:#8FB8E8; }
+.tag-planned{ border-style:dashed; color:var(--text-faint); }
+
 /* ---- CTA ท้ายหน้าต่าง ---- */
 .pd-cta{
   padding:44px 56px 56px;
@@ -103,6 +115,7 @@ body{
   background:var(--bg-alt);
 }
 .pd-cta-actions{ display:flex; gap:14px; flex-wrap:wrap; }
+
 
 /* ---- Responsive ---- */
 @media (max-width: 720px){

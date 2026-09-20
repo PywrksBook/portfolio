@@ -8,8 +8,8 @@
 ## เทคโนโลยีที่ใช้
 
 - HTML5 สำหรับโครงสร้าง
-- CSS3 พร้อม Custom Properties
-- JavaScript แบบ Vanilla (ไม่ใช้ framework)
+- CSS3 
+- JavaScript 
 - Google Fonts (Noto Serif Thai และ IBM Plex Sans Thai)
 
 ## โครงสร้างโปรเจกต์
@@ -22,9 +22,12 @@ Portfolio Book/
 ├── style.css            ไฟล์สไตล์ทั้งหมด
 ├── script.js            การทำงานแบบ Interactive
 ├── translations.js      ข้อมูลภาษา (TH/EN)
+├── favicon.svg          ไอคอนแท็บเบราว์เซอร์
+├── favicon.png          ไอคอนสำรอง / apple-touch-icon (180x180)
 ├── resume_piyawat_reangraksa.pdf  เรซูเม่ (ดาวน์โหลดได้จากหน้าเว็บ)
 ├── img/                 โฟลเดอร์รูปภาพ
-│   └── Me.png          รูปโปรไฟล์
+│   ├── Me.webp         รูปโปรไฟล์ (ครอปแล้ว พื้นหลังโปร่งใส)
+│   └── og-image.png    รูปตัวอย่างเมื่อแชร์ลิงก์ (1200x630)
 └── README.md           ไฟล์นี้
 ```
 
@@ -36,30 +39,10 @@ Portfolio Book/
 - รีเฟรชหน้าจะกลับไปเป็นภาษาไทย
 - ใช้ระบบ data-key attributes ในการแมปคำแปล
 
-### Smooth Scroll
-- คลิกเมนูจะเลื่อนไปยัง section ที่เลือกอย่างนุ่มนวล
-- ใช้ cubic easing เพื่อการเคลื่อนไหวที่ดูธรรมชาติ
-- ปิดการทำงานอัตโนมัติถ้าผู้ใช้ตั้งค่า reduced motion
-
-### Typing Effect
-- ชื่อในส่วน Hero จะพิมพ์ออกมาทีละตัวอักษร
-- จะปิดการทำงานอัตโนมัติสำหรับผู้ที่ตั้งค่า reduced motion
-
-### Reveal Animations
-- แต่ละ section จะค่อย ๆ เฟดเข้ามาเมื่อเลื่อนลงมา
-- ใช้ Intersection Observer API เพื่อประสิทธิภาพที่ดี
-- ปิดอัตโนมัติสำหรับผู้ใช้ที่ไม่ต้องการ animation
-
-### หน้า Project Detail
-- กด "ดูรายละเอียดโปรเจกต์" จากการ์ดโปรเจกต์เพื่อเปิดหน้ารายละเอียด
-- แสดงเป็นหน้าต่างแบบ Modal บนฉากหลังมืด พร้อมปุ่ม X ปิดกลับหน้าหลัก
-- แสดง Role / Period / สถานะโปรเจกต์ / Tech Stack / Key Responsibilities
-- ลิงก์ไปยัง GitHub Repository ของโปรเจกต์
-
-### ช่องทางติดต่อ
-- ปุ่มส่งอีเมล (เปิด Gmail พร้อมหัวข้อส่งถึง)
-- ปุ่ม ADD LINE ID (เปิดหน้าโปรไฟล์ LINE)
-- ลิงก์ GitHub และ LinkedIn ในรายการติดต่อ
+### เมนูบนมือถือ
+- หน้าจอ ≤ 860px แสดงปุ่ม Hamburger แทนเมนูปกติ
+- กดลิงก์ในเมนูหรือกดปุ่ม Esc เพื่อปิดเมนู
+- รองรับ aria-expanded สำหรับ screen reader
 
 ## ข้อมูลติดต่อ
 

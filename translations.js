@@ -24,6 +24,7 @@ const translations = {
     
     // Hero Section
     heroGreeting: "Hello, I'm",
+    heroRole: "Web Developer Intern (สหกิจศึกษา)",
     heroDesc: "ผมเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาการจัดการ สาขาวิชาคอมพิวเตอร์ธุรกิจ สนใจการพัฒนา Web Application และการแก้ปัญหาด้วยซอฟต์แวร์ กำลังพัฒนาทักษะด้าน Full-stack Development, REST API และ Database ผ่านการทำโปรเจกต์จริง พร้อมมองหาโอกาสฝึกงานสหกิจศึกษาในตำแหน่ง Web Developer",
     heroButton1: "ดูผลงานของผม",
     heroButton2: "ดาวน์โหลดเรซูเม่",
@@ -47,7 +48,7 @@ const translations = {
     
     // Work Experience Section
     workTitle: "Work Experience",
-    workJob1Title: "IT & Store Support",
+    workJob1Title: "IT & Store Support (Part-time)",
     workJob1Company: "บริษัท แม่เอียดปลาส้มแปดริ้ว จำกัด",
     workJob1Date: "5 มีนาคม 2566 — ปัจจุบัน",
     workJob1Item1: "สนับสนุนการใช้งานระบบ POS ของร้านทั้ง 2 สาขา",
@@ -108,7 +109,8 @@ const translations = {
     
     // Hero Section
     heroGreeting: "Hello, I'm",
-    heroDesc: "I am a 4th-year student in Business Computer, Faculty of Management. I am interested in developing web applications and solving problems with software, and I am currently building skills in full-stack development, REST APIs, and databases through real projects — looking for a co-op internship opportunity as a Web Developer.",
+    heroRole: "Web Developer Intern (Co-op)",
+    heroDesc: "I am a 4th-year student in Business Computer, Faculty of Management Science. I am interested in developing web applications and solving problems with software, and I am currently building skills in full-stack development, REST APIs, and databases through real projects — looking for a co-op internship opportunity as a Web Developer.",
     heroButton1: "View My Work",
     heroButton2: "Download Resume",
     
@@ -121,17 +123,17 @@ const translations = {
     factInstitute: "Institution",
     factInstituteValue: "Rajabhat Rajanagarindra University",
     factMajor: "Faculty / Major",
-    factMajorValue: "Business Computer Science",
+    factMajorValue: "Faculty of Management Science — Business Computer",
     factLocation: "Location",
     factLocationValue: "Chachoengsao, Thailand",
-    factPosition: "Position Interested",
+    factPosition: "Position of Interest",
     factPositionValue: "Web Developer",
     factCoop: "Co-op Period",
     factCoopValue: "November 19, 2026 – February 26, 2027",
     
     // Work Experience Section
     workTitle: "Work Experience",
-    workJob1Title: "IT & Store Support",
+    workJob1Title: "IT & Store Support (Part-time)",
     workJob1Company: "Mae Aiad Pla Som Pad Riw Co., Ltd.",
     workJob1Date: "March 5, 2023 – Present",
     workJob1Item1: "Support POS system usage across 2 store branches",
@@ -144,7 +146,7 @@ const translations = {
     workJob2Title: "Internship Experience",
     workJob2Company: "Golden Sun Construct Co., Ltd.",
     workJob2Date: "March 2022 – May 2022",
-    workJob2Item1: "Assist with electrical system installation in factory",
+    workJob2Item1: "Assist with electrical system installation in a factory",
     workJob2Item2: "Use basic tools and follow factory safety procedures",
     workJob2Item3: "Work with team and follow guidance from experienced staff",
     workJob2Item4: "Learn and perform new tasks from real workplace situations",
@@ -160,13 +162,13 @@ const translations = {
     // Projects Section
     projectsTitle: "Projects",
     projectTitle: "Wat Nakhumothanamai Punyaram Website",
-    projectDesc: "Developed a Backend REST API for the Wat Naku temple website using Node.js, Express.js, and MySQL, supporting management of temple information, monks, activities, news, and activity photos — with admin authentication via JWT and bcrypt, plus image uploads via Multer.",
+    projectDesc: "Developed a Backend REST API for the Wat Nakhumothanamai Punyaram temple website using Node.js, Express.js, and MySQL, supporting management of temple information, monks, activities, news, and activity photos — with admin authentication via JWT and bcrypt, plus image uploads via Multer.",
     projectLink: "View Project Details",
     
     // Contact Section
     contactTitle: "Contact Me",
     contactDesc: "Looking for co-op opportunities in Web Development and Software Development fields or related positions. Happy to chat and respond to all messages.",
-    contactButton: "Send Me Email",
+    contactButton: "Send Me an Email",
     contactLineButton: "ADD LINE ID",
     contactEmail: "Email",
     contactEmailValue: "piyawat2162@gmail.com",

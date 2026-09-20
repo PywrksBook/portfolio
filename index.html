@@ -3,15 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Piyawat Reangraksa-Portfolio</title>
+<title>Piyawat Reangraksa — Portfolio</title>
 <meta name="description" content="Piyawat Reangraksa — 4th-year Business Computer student and aspiring Web Developer, seeking a co-op internship. Full-stack projects with HTML, CSS, JavaScript, Node.js, Express, and MySQL.">
 <meta property="og:title" content="Piyawat Reangraksa — Portfolio">
 <meta property="og:description" content="4th-year Business Computer student and aspiring Web Developer, seeking a co-op internship.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://pywrksbook.github.io/portfolio/">
+<meta property="og:image" content="https://pywrksbook.github.io/portfolio/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png" sizes="180x180">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<noscript><style>
+  /* ถ้า JavaScript ปิดอยู่: แสดงชื่อเต็มและเนื้อหาที่ปกติจะ fade-in ด้วย JS */
+  .sr-only{ position:static; width:auto; height:auto; margin:0; overflow:visible; clip:auto; white-space:nowrap; }
+  #typed-name, .cursor{ display:none; }
+  .reveal{ opacity:1; transform:none; }
+</style></noscript>
 <script src="translations.js" defer></script>
 </head>
 <body>
@@ -21,14 +35,17 @@
 <header id="site-header">
   <nav class="nav">
     <a href="#top" class="logo"><span class="logo-mark"></span>Portfolio</a>
-    <div class="nav-links">
+    <div class="nav-links" id="nav-links">
       <a href="#about" data-key="navAbout">เกี่ยวกับผม</a>
       <a href="#work" data-key="navWork">ประสบการณ์ทำงาน</a>
       <a href="#skills" data-key="navSkills">ทักษะ</a>
       <a href="#projects" data-key="navProjects">โปรเจกต์</a>
       <a href="#contact" data-key="navContact">ติดต่อ</a>
     </div>
-    <button id="lang-toggle" class="nav-cta lang-btn">TH / EN</button>
+    <div class="nav-actions">
+      <button id="lang-toggle" class="nav-cta lang-btn">TH / EN</button>
+      <button id="nav-toggle" class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span></button>
+    </div>
   </nav>
 </header>
 
@@ -38,7 +55,8 @@
   <section class="hero">
     <div class="wrap hero-grid">
       <div>
-        <h1><span class="hero-greeting" data-key="heroGreeting">Hello, I'm</span><span class="name-line"><span id="typed-name"></span><span class="cursor"></span></span></h1>
+        <h1><span class="hero-greeting" data-key="heroGreeting">Hello, I'm</span><span class="name-line"><span class="sr-only">Piyawat Reangraksa</span><span id="typed-name" aria-hidden="true"></span><span class="cursor" aria-hidden="true"></span></span></h1>
+        <p class="hero-role"><span class="hero-role-th" lang="th">ปิยวัฒน์ เรืองรักษา</span><span class="hero-role-sep" aria-hidden="true">·</span><span class="hero-role-title" data-key="heroRole">Web Developer Intern (สหกิจศึกษา)</span></p>
         <p class="hero-desc" data-key="heroDesc">
             ผมเป็นนักศึกษาชั้นปีที่ 4 คณะวิทยาการจัดการ สาขาวิชาคอมพิวเตอร์ธุรกิจ
           สนใจการพัฒนา Web Application และการแก้ปัญหาด้วยซอฟต์แวร์
@@ -52,7 +70,7 @@
       <div class="hero-visual">
         <div class="frame">
           <div class="frame-fill">
-            <img class="profile-image" src="img/Me.png" alt="รูปโปรไฟล์ของ Piyawat Reangraksa">
+            <img class="profile-image" src="img/Me.webp" width="1000" height="1007" alt="รูปโปรไฟล์ของ Piyawat Reangraksa">
           </div>
         </div>
       </div>
@@ -94,7 +112,7 @@
         <div class="timeline-item">
           <div class="timeline-dot"></div>
           <div class="when" data-key="workJob1Date">5 มีนาคม 2566 — ปัจจุบัน</div>
-          <h3 data-key="workJob1Title">IT &amp; Store Support</h3>
+          <h3 data-key="workJob1Title">IT &amp; Store Support (Part-time)</h3>
           <div class="org" data-key="workJob1Company">บริษัท แม่เอียดปลาส้มแปดริ้ว จำกัด</div>
           <ul class="timeline-list">
             <li data-key="workJob1Item1">สนับสนุนการใช้งานระบบ POS ของร้านทั้ง 2 สาขา</li>
@@ -154,7 +172,7 @@
           </div>
           <div class="tag-row">
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20z"/></svg></span>Node.js</span>
-            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M12 4v16"/></svg></span>Express</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M12 4v16"/></svg></span>Express.js</span>
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 17V7l8-4 8 4v10l-8 4-8-4z"/></svg></span>REST API</span>
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>JWT</span>
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></span>bcrypt</span>
@@ -162,16 +180,15 @@
           </div>
         </div>
 
-        <div class="skill-card cat-mobile reveal">
+        <div class="skill-card cat-lang reveal">
           <div class="skill-card-head">
             <div class="skill-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="8 4 2 12 8 20"></polyline><polyline points="16 4 22 12 16 20"></polyline></svg></div>
             <div>
-              <h3 data-key="skillLanguages">Programming-Languages</h3>
+              <h3 data-key="skillLanguages">Programming Languages</h3>
             </div>
           </div>
           <div class="tag-row">
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><ellipse cx="12" cy="12" rx="10" ry="4"/></svg></span>JavaScript</span>
-            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/></svg></span>C++</span>
           </div>
         </div>
 
@@ -197,7 +214,7 @@
           </div>
           <div class="tag-row">
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="6" r="2"/><circle cx="6" cy="18" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 8v8M8 6h4a4 4 0 014 4"/></svg></span>Git &amp; GitHub</span>
-            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></span>Xampp</span>
+            <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg></span>XAMPP</span>
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>VS Code</span>
             <span class="tag"><span class="tag-dot"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M9 12l2 2 4-4"/></svg></span>Postman</span>
           </div>
@@ -261,13 +278,13 @@
            ยินดีพูดคุยและตอบกลับทุกข้อความครับ</p>
       
         <div class="contact-actions">
-          <a href="https://mail.google.com/mail/?view=cm&fs=1&to=piyawat2162@gmail.com&su=Contact%20from%20Portfolio" target="_blank" rel="noopener" class="btn btn-primary" data-key="contactButton">ส่งอีเมลถึงผม</a>
+          <a href="mailto:piyawat2162@gmail.com?subject=Contact%20from%20Portfolio" class="btn btn-primary" data-key="contactButton">ส่งอีเมลถึงผม</a>
           <a href="https://line.me/ti/p/pGTCWBeEhc" target="_blank" rel="noopener" class="btn btn-ghost" data-key="contactLineButton">ADD LINE ID</a>
         </div>
       </div>
       <div class="reveal contact-list">
-        <div class="contact-row"><span data-key="contactEmail">อีเมล</span><span data-key="contactEmailValue">piyawat2162@gmail.com</span></div>
-        <div class="contact-row"><span data-key="contactPhone">โทรศัพท์</span><span data-key="contactPhoneValue">080-081-6814</span></div>
+        <div class="contact-row"><span data-key="contactEmail">อีเมล</span><a href="mailto:piyawat2162@gmail.com"><span data-key="contactEmailValue">piyawat2162@gmail.com</span></a></div>
+        <div class="contact-row"><span data-key="contactPhone">โทรศัพท์</span><a href="tel:+66800816814"><span data-key="contactPhoneValue">080-081-6814</span></a></div>
         <div class="contact-row"><span data-key="contactGithub">GitHub</span><a href="https://github.com/PywrksBook" target="_blank" rel="noopener"><span data-key="contactGithubValue">github.com/PywrksBook</span></a></div>
         <div class="contact-row"><span data-key="contactLinkedin">LinkedIn</span><a href="https://www.linkedin.com/in/piyawat-reangraksa-0799b9436/" target="_blank" rel="noopener"><span data-key="contactLinkedinValue">linkedin.com/in/piyawat-reangraksa</span></a></div>
       </div>
