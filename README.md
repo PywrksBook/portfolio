@@ -24,7 +24,7 @@ Portfolio Book/
 ├── translations.js      ข้อมูลภาษา (TH/EN)
 ├── favicon.svg          ไอคอนแท็บเบราว์เซอร์
 ├── favicon.png          ไอคอนสำรอง / apple-touch-icon (180x180)
-├── resume_piyawat_reangraksa.pdf  เรซูเม่ (ดาวน์โหลดได้จากหน้าเว็บ)
+├── resume-eng.pdf  เรซูเม่ (ดาวน์โหลดได้จากหน้าเว็บ)
 ├── img/                 โฟลเดอร์รูปภาพ
 │   ├── Me.webp         รูปโปรไฟล์ (ครอปแล้ว พื้นหลังโปร่งใส)
 │   └── og-image.png    รูปตัวอย่างเมื่อแชร์ลิงก์ (1200x630)
