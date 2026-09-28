@@ -88,8 +88,7 @@ Portfolio Book/
 
 Piyawat Reangraksa
 
-กำลังมองหาโอกาสสหกิจศึกษาในสายงาน Web Development และ Software Development  
-ช่วงเวลาที่พร้อม: 19 พฤศจิกายน 2569 ถึง 26 กุมภาพันธ์ 2570
+กำลังมองหาโอกาสสหกิจศึกษาในสายงาน Web Development และ Software Development
 
 ---
 

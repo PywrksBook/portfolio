@@ -43,8 +43,6 @@ const translations = {
     factLocationValue: "ฉะเชิงเทรา, ประเทศไทย",
     factPosition: "ตำแหน่งที่สนใจ",
     factPositionValue: "Web Developer",
-    factCoop: "ช่วงสหกิจศึกษา",
-    factCoopValue: "19 พฤศจิกายน 2569 – 26 กุมภาพันธ์ 2570",
     
     // Work Experience Section
     workTitle: "Work Experience",
@@ -128,8 +126,6 @@ const translations = {
     factLocationValue: "Chachoengsao, Thailand",
     factPosition: "Position of Interest",
     factPositionValue: "Web Developer",
-    factCoop: "Co-op Period",
-    factCoopValue: "November 19, 2026 – February 26, 2027",
     
     // Work Experience Section
     workTitle: "Work Experience",
